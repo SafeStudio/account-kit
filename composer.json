@@ -1,5 +1,5 @@
 {
-    "name": "ansidev/account-kit",
+    "name": "safestudio/account-kit",
     "description": "Make verifying via Facebook AccountKit easier",
     "type": "library",
     "license": "GPLv3",
@@ -12,7 +12,8 @@
     "minimum-stability": "stable",
     "require": {
         "guzzlehttp/guzzle": "^6.3",
-        "psr/log": "^1.0"
+        "psr/log": "^1.0",
+        "safestudio/facebook-exception-handler": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.3"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "420ade50507abb911c4bd89c5443f715",
+    "content-hash": "ee90b7146bd971083dea17bf2b3abe66",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -283,6 +283,41 @@
                 "psr-3"
             ],
             "time": "2016-10-10T12:19:37+00:00"
+        },
+        {
+            "name": "safestudio/facebook-exception-handler",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SafeStudio/facebook-exception-handler.git",
+                "reference": "3f85e571bd558a4bacdd3a4d9a8cc0f83ca2422c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SafeStudio/facebook-exception-handler/zipball/3f85e571bd558a4bacdd3a4d9a8cc0f83ca2422c",
+                "reference": "3f85e571bd558a4bacdd3a4d9a8cc0f83ca2422c",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "ansidev",
+                    "email": "ansidev@gmail.com"
+                }
+            ],
+            "description": "Handle Facebook Exception Message",
+            "time": "2017-08-09T18:04:45+00:00"
         }
     ],
     "packages-dev": [

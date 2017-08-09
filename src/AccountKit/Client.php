@@ -2,11 +2,15 @@
 
 namespace AccountKit;
 
+use Facebook\FacebookExceptionHandlerTrait;
 use GuzzleHttp\Client as GuzzleClient;
+use GuzzleHttp\Exception\RequestException;
 use Psr\Log\LoggerInterface;
 
 class Client implements AccountKitInterface
 {
+    use FacebookExceptionHandlerTrait;
+
     const ACCOUNT_KIT_BASE_URI = 'https://graph.accountkit.com/';
 
     /**
@@ -105,10 +109,14 @@ class Client implements AccountKitInterface
 
     public function verify($code, $codeType = CodeType::AUTHORIZATION_CODE)
     {
-        $data = $this->client->request('GET', $this->getVerifyAccessTokenUrl($code, $codeType));
-        $this->logger->info("Response from AccountKit\Client::verify(): ".$data->getBody());
+        try {
+            $data = $this->client->request('GET', $this->getVerifyAccessTokenUrl($code, $codeType));
+            $this->logger->info("Response from AccountKit\Client::verify(): ".$data->getBody());
 
-        return json_decode($data->getBody());
+            return json_decode($data->getBody());
+        } catch (RequestException $e) {
+            $this->handle($e);
+        }
     }
 
     public function getUserPhone($code, $codeType = CodeType::AUTHORIZATION_CODE)
@@ -120,5 +128,4 @@ class Client implements AccountKitInterface
     {
         return $this->verify($code, $codeType)->email->address;
     }
-
 }
