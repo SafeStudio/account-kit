@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee90b7146bd971083dea17bf2b3abe66",
+    "content-hash": "0b58f549416118b350a6989584d7ebb6",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -286,16 +286,16 @@
         },
         {
             "name": "safestudio/facebook-exception-handler",
-            "version": "v1.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SafeStudio/facebook-exception-handler.git",
-                "reference": "3f85e571bd558a4bacdd3a4d9a8cc0f83ca2422c"
+                "reference": "63e1947404f21beaf832bda45c5a4e4d5f8189ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SafeStudio/facebook-exception-handler/zipball/3f85e571bd558a4bacdd3a4d9a8cc0f83ca2422c",
-                "reference": "3f85e571bd558a4bacdd3a4d9a8cc0f83ca2422c",
+                "url": "https://api.github.com/repos/SafeStudio/facebook-exception-handler/zipball/63e1947404f21beaf832bda45c5a4e4d5f8189ff",
+                "reference": "63e1947404f21beaf832bda45c5a4e4d5f8189ff",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +317,7 @@
                 }
             ],
             "description": "Handle Facebook Exception Message",
-            "time": "2017-08-09T18:04:45+00:00"
+            "time": "2017-08-12T08:56:42+00:00"
         }
     ],
     "packages-dev": [

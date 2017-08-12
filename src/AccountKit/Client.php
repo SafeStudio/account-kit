@@ -115,7 +115,7 @@ class Client implements AccountKitInterface
 
             return json_decode($data->getBody());
         } catch (RequestException $e) {
-            $this->handle($e);
+            $this->handleRequestException($e);
         }
     }
 
