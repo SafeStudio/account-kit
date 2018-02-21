@@ -2,7 +2,7 @@
     "name": "safestudio/account-kit",
     "description": "Make verifying via Facebook AccountKit easier",
     "type": "library",
-    "license": "GPLv3",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "ansidev",
